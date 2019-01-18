@@ -33,14 +33,14 @@ const getAllPosts = () => {
 
 const getOnePost = (id) => {
   return $.ajax({
-    url: config.apiUrl + '/posts/' + id,
+    url: config.apiUrl + '/posts/' + id.post.id,
     method: 'GET'
   })
 }
 
 const deletePost = (id) => {
   return $.ajax({
-    url: config.apiUrl + '/posts/' + id,
+    url: config.apiUrl + '/posts/' + id.post.id,
     method: 'DELETE',
     headers: {
       Authorization: 'Token token=' + store.user.token
