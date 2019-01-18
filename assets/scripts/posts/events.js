@@ -86,11 +86,15 @@ const onCreatePost = function (event) {
   }
 }
 
+const addHandlers = () => {
+  $('#posts-create').on('submit', onCreatePost)
+  $('#posts-index').on('submit', onGetAllPosts)
+  $('#posts-show').on('submit', onGetOnePost)
+  $('#posts-delete').on('submit', onDeletePost)
+  $('#posts-update').on('submit', onUpdatePost)
+}
+
 
 module.exports = {
-  onCreatePost,
-  onUpdatePost,
-  onDeletePost,
-  onGetAllPosts,
-  onGetOnePost
+  addHandlers
 }
