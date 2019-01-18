@@ -52,5 +52,45 @@
          </fieldset>
       </form>
       <div id="message"></div>
+
+      <h2>Get All Posts</h2>
+      <form id="posts-index" class="signedInButtons d-none">
+       <button type="submit" class="btn btn-default">Get All Posts</button>
+      </form>
+      <div id="content"></div>
+
+      <h2>Get One Post</h2>
+      <form class="posts signedInButtons d-none" id="posts-show">
+        <div class="form-group">
+          <input required type="number" name="post[id]" placeholder="Post ID Here">
+        </div>
+        <button type="submit" class="btn btn-default">Get a Single Post</button>
+      </form>
+
+      <h2>Delete One Post</h2>
+      <form class="posts signedInButtons d-none" id="posts-delete">
+        <div class="form-group">
+          <input required type="number" name="post[id]" placeholder="Post ID Here">
+        </div>
+        <button type="submit" class="btn btn-default">Delete a Post</button>
+      </form>
+
+      <h2>Update One Post</h2>
+      <form class="posts signedInButtons d-none" id="posts-update">
+        <div class="form-group">
+          <input required type="number" name="post[id]" id="post-id-update" placeholder="Post ID Here">
+          <input required type="text" name="post[body]" placeholder="Post Text Here">
+        </div>
+        <button type="submit" class="btn btn-default">Change a Post</button>
+      </form>
+
+      <h2>Create One Post</h2>
+      <form class="books signedInButtons d-none" id="posts-create">
+        <div class="form-group">
+          <input required type="text" name="post[body]" placeholder="Post Text Here">
+        </div>
+        <button type="submit" class="btn btn-default">Add a Post</button>
+      </form>
+
     </body>
 </html>
