@@ -2,9 +2,11 @@
 // @import '../../public/hpfont/harryp__-webfont.woff2';
 // @import '../../public/hpfont/harryp__-webfont.woff';
 $text-color: #fff;
+$background-color: #000;
 
 body {
-  background-image: url('../../public/pensieve.jpg');
+  background-image: url('../../public/pensieve.png');
+  background-color: $background-color;
   color: $text-color;
   // font-family: 'harry_pregular';
 }
