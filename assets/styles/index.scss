@@ -1,16 +1,18 @@
 @import '~bootstrap/scss/bootstrap';
+// @import '../../public/hpfont/harryp__-webfont.woff2';
+// @import '../../public/hpfont/harryp__-webfont.woff';
 $text-color: #fff;
 
 body {
   background-image: url('../../public/Pensieve_merged_black.jpg');
   color: $text-color;
-  font-family: 'harry_pregular';
+  // font-family: 'harry_pregular';
 }
 
-@font-face {
-  font-family: 'harry_pregular';
-  src: url('harryp__-webfont.woff2') format('woff2'),
-       url('harryp__-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+// @font-face {
+//   font-family: 'harry_pregular';
+//   src: url('harryp__-webfont.woff2') format('woff2'),
+//        url('harryp__-webfont.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+// }
